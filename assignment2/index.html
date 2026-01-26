@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Assignment 2</title>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <h1>The website of all time</h1>
+    </header>
+    <nav>
+        <div class="funnyaudio">
+           <img src="./assets/spamdance.gif" alt="spamton from deltarune doin a lil dance" id="spamman"/>
+            <audio controls loop autoplay src="./assets/much obliged.mp3"></audio>
+        </div>
+        <ul>
+            <li><a href="./assets/home.jpg">Home</a></li>
+            <li><a href="#" onclick="popUpFunc();">wow</a></li>
+            <li><a href="https://www.coolmathgames.com">cool beans</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1 class="comic">I made a website. Holy moly.</h1>
+        <p>This is a webpage made in HTML. It's got some cool stuff in it.</p>
+        <p>
+            <marquee id="wow">this text moves WOAH</marquee> Check out that image bouncing around below. Ain't it neat?
+        </p>
+        <marquee direction="down" width="100%" height="360" behavior="alternate" class="outlined" id="bouncer">
+            <marquee behavior="alternate"><img src="./assets/CD-INTERACTIVE_logo.png" height="128px" /></marquee>
+        </marquee>
+        <p class="bottom-padding">The web is amazing isn't it? You can put whatever you want on it. You don't have to abide by any standards or human interface guidelines. As long as the code is correctly written, you can make whatever you want in theory.</p>
+        <p>You can even have a picture that changes on hover like this!</p>
+        <div id="imgWrapper">
+            <img src="./assets/img0.jpg" class="img img01">
+            <img src="./assets/img1.jpg" class="img img02">
+        </div>
+        <p class="bottom-padding">Neat, huh?</p>        
+        <h2>Some of my favorite elements of yesteryear</h2>
+        <p>As the web evolves, so do tastes in webpage design and as a result, many elements get left behind in most webpages. Here are some of what we lost in our pursuit of progress.</p>
+        <ul class="bottom-padding">
+            <li>An abundance of GIFs</li>
+            <li>abusing iframes to make permanent headerbars</li>
+            <li>intro movies made in Adobe Flash</li>
+            <li>the <span class="blink">&#60;blink&#62;</span> tag</li>
+            <li>making literal maps you can click on</li>
+        </ul>
+    </main>
+    <footer>
+        <h2>Assignment 2</h2>
+        <p>Site best viewed on NCSA Mosaic 0.9 or lower</p>
+    </footer>
+    <script>
+        function popUpFunc() {
+            alert("Pretend I put something funny here.");
+        }
+    </script>
+</body>
+</html>
