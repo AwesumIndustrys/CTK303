@@ -1,0 +1,40 @@
+body {
+    background-image: url("./tile.png");
+}
+
+#wrapper {
+    margin: 2em 1em;
+    border: 4px solid black;
+    border-radius: 1em;
+    padding: 1em;
+    background-color: white;
+}
+
+#funShapes {
+    height: 24em;
+    transform: scale(0.8);
+    display: block;
+    margin: 2em auto;
+    opacity: 75%;
+    transition: all 1s ease-in-out;
+}
+
+#funShapes:hover {
+    transform: scale(1.2);
+    opacity: 100%;
+}
+
+.cls-1, .cls-2, .cls-3, .cls-4, .cls-5, .cls-6 {
+    transition: fill 0.67s linear;
+}
+
+/* change color on hover */
+.cls-1:hover, .cls-2:hover {
+    fill: yellow;
+}
+.cls-3:hover, .cls-4:hover {
+    fill: cyan;
+}
+.cls-5:hover, .cls-6:hover {
+    fill: magenta;
+}
