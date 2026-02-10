@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Good thing nobody even dares think about ActiveX anymore</title>
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+        <link rel="icon" href="./favicon.ico">
+        <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+        <script src="sketch.js"></script>
+    </head>
+    <body>
+        <div id="backgroundCanvas">Whoops, the canvas didn't load!</div>
+        <div id="wrapper">
+            <h1>JavaScript</h1>
+            <h3>(not to be confused with plain ol' Java)</h3>
+            <p>It can do some neat stuff! You can do something as simple as this button.</p>
+            <button class="coolButton" onclick="buttonScr()">Click me! It'll be fun!</button>
+            <p>You can have a picture fade in and out when you scroll</p>
+            <img src="./assets/offline.PNG" id="img1" class="show" alt="Adobe Media Not Found error"/>
+            <p>Or you can go all out, equip a library such as <a href="https://www.p5js.org">p5.js</a>, and make something super cool.</p>
+            <iframe id="p5embed" src="https://editor.p5js.org/tgknoll/full/8LtGNGZvm"></iframe>
+        </div>
+        <script>
+            //Scroll on hover thing
+            var logo = document.getElementById("img1");
+   
+            function checkPosition() {
+                var logoTop = logo.offsetTop;
+                var windowScroll = window.scrollY;
+      
+                if (logoTop - windowScroll > 90) {
+                    logo.classList.add("show");
+                } else {
+                    logo.classList.remove("show");
+                }
+            }
+            window.addEventListener("scroll",checkPosition);
+
+            //function for the button
+            function buttonScr() {
+                let x = Math.floor(Math.random() * 10);
+                console.log(x);
+
+                let aud = new Audio("./assets/DING.WAV")
+                aud.play();
+                if(x == 7) {
+                    alert("There's a 1 out of 10 chance this message pops up instead of the other one.")
+                } else {
+                    alert("With JavaScript, you can make simple pop-ups!")
+                }
+            }
+        </script>
+    </body>    
+</html>
