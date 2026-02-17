@@ -47,8 +47,8 @@
             window.setInterval(updateResoText, 60)
 
             function updateResoText() {
-                var screenWidth = window.screen.width;
-                var screenHeight = window.screen.height;
+                var screenWidth = window.outerWidth;
+                var screenHeight = window.outerHeight;
 
                 let newText = "Your current window resolution is " + screenWidth + " x " + screenHeight;
                 document.getElementById("resotext").innerHTML = newText;
