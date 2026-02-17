@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Responsive Design</title>
+        <meta charset="UTF-8"/>
+        <link href="styles.css" rel="stylesheet" type="text/css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    </head>
+    <body>
+        <header>
+            <h1>Responsive Design</h1>
+            <p id="resotext">There's no javascript so we can't show your resolution</p>
+        </header>
+        <nav>
+            <a href="#" onclick="updateImg('img/home.jpg')">Home</a>
+            <a href="#" onclick="updateImg('img/insert.jpg')">Insert</a>
+            <a href="#" onclick="updateImg('img/end.jpg')">End</a>
+            <a href="#" onclick="updateImg('img/delete.jpg')">Delete</a>
+        </nav>
+        <main>
+            <img id="painting" src="img/static.gif"/>
+            <h1>This website is fluid</h1>
+            <p>It changes with the size of your browser. This makes it so it can have different layouts for cell phones, tablets, and desktop computers. Due to their different sizes and input methods, one size can't fit all here, so having the page adaptable is a good thing.</p>
+            <p>Well, since you're here and I don't have anything meaningful to add. I guess I'll go ahead and tell you some fun facts. You see those links in the navbar above? Those don't take you to different websites, since there are none. Instead, they change the picture on the page. Try it out!</p>
+            <p>I suppose I could add lorem ipsum text here instead but eh, I don't really wanna, not for this main text anyways. The only reason I'm adding more text at all is cause I want the text to extend below the image whenever your window is at the max width (which is 960 pixels, by the way), that way it doesn't conflict with the other page elements below.
+            </p>
+            <div id="blurbs">
+                <article>
+                    <h2>This article is meaningless</h2>
+                    <p>There's nothing here that is worth your eyeball time. It's just here to make some things work.</p>
+                </article>
+                <article>
+                    <h2>Same with this one.</h2>
+                    <p>I can't really come up with anything clever or witty to put here, so these so-called "Articles" wlll forever be pointless.</p>
+                </article>
+                <article>
+                    <h2>This one too</h2>
+                    <p>I'm getting bored just writing these. It may as well be lorem ipsum text or just the word "blah" for as many times as I need.</p>
+                </article>
+            </div>
+            <p>Those articles above can also change layouts depending on the type of device you got. For tablets and mobile phones, they're on top of each other. On desktop and laptop computers, they sit side by side.</p>
+        </main>
+        <footer>
+            <p>This page was made in HTML.</p>
+        </footer>
+        <script>
+            window.setInterval(updateResoText, 60)
+
+            function updateResoText() {
+                var screenWidth = window.screen.width;
+                var screenHeight = window.screen.height;
+
+                let newText = "Your current window resolution is " + screenWidth + " x " + screenHeight;
+                document.getElementById("resotext").innerHTML = newText;
+            }
+
+            function updateImg(pict) {
+                document.getElementById("painting").src = pict;
+            }
+        </script>
+    </body>
+</html>
