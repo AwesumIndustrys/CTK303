@@ -1,0 +1,25 @@
+/* 
+
+Most stylings should be handled by Bootstrap.
+This is only for specific things not provided by Bootstrap. 
+Keep it to a minimum.
+
+*/
+
+body {
+    background: linear-gradient(300deg,#ff0000,#ff7f00,#ffff00,#00ff00,#0000ff,#7f00ff);
+    background-size: 360% 360%;
+    animation: gradient-animation 36s ease infinite;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
