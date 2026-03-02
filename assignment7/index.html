@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Assignment 7 Accessibility frontpage</title>
+        <meta charset="UTF-8">
+        <link href="styles.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <h1>Assignment 7 - Accessibility</h1>
+        <p>For this assignment, I thought it would be easiest to throw everything into an HTML document. I decided to take a look at my assignment 2 page.</p>
+        <p>For reference, below is a link to the original submission:<br><a href="https://awesumindustrys.github.io/CTK303/assignment2/index.html">Original Assignment 2 page</a></p>
+        <p>I then put the site through the WAVE evaluation tool and W3C's Validator. Here are the results.</p>
+        <img src="./before_pics/Screenshot 2026-03-01 174601.png"><img src="./before_pics/Screenshot 2026-03-01 175040.png"><img src="./before_pics/Screenshot 2026-03-01 174705.png"><img src="./before_pics/Screenshot 2026-03-01 174728.png">
+        <p>As you can see, there are some elements that are bad for Accessibility, most notably my usage of the &#60;marquee&#62; tag. I used it due to my fondness of websites from the late 90s and early 2000s, but I forgot it is a deprecated tag. In addition, I forgot to add alt text to many of the images and I added trailing slashes to the end of standalone tags which is apparently unnecesary and can cause problems with unquoted attribute values, which I didn't use but it could still cause problems.</p>
+        <p>Below is a new link for the revision of the website. <br><a href="./assignment2redux/index.html">Assignment 2 Redux</a></p>
+        <p>I replaced the marquee HTML tags with CSS that does essentially the same thing. I also added alt text to the images and got rid of the trailing slashes. This completely repaired my website in the eyes in the validators as shown below.</p>
+        <img src="./after_pics/Screenshot 2026-03-01 212749.png"><img src="./after_pics/Screenshot 2026-03-01 213626.png">
+        <p>The only exception to the statement above is the fact that it detected an embedded audio track. It wants me to add a transcript but I do not know how to fix that.</p>
+    </body>
+</html>
