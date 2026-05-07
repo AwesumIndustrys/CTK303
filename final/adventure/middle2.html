@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>A series of hallways - Web-venture</title>
+		<link href="../styles.css" rel="stylesheet" type="text/css">
+		<script src="../loadsave.js"></script>
+    </head>
+    <body>
+        <header>
+			<h1><a href="../index.html">Web-venture</a></h1>
+            <ul>
+                <li><a onclick="makeSave()">Save here</a></li>
+                <li><a onclick="loadSave()">Load savegame</a></li>
+            </ul>
+		</header>
+        <main>
+            <h2>A series of hallways</h2>
+            <p>You go through the door and find yourself in a hallway. Oddly, it gives off similar vibes to the hallway at your old school. It's a weird feeling, given the circumstances, but no matter, you can't be standing around getting a bizzare sense of nostalgia. You walk around thinking on where to go next. Thankfully these doors are actually labelled this time so it should be easier.</p>
+            <ul>
+                <li><a href="./middle2-control.html">Go through the door marked "Control Room"</a></li>
+                <li><a href="./middle2-boiler.html">Go through the door marked "Boiler Room"</a></li>
+                <li><a href="./middle2-broomclosetending.html">Go through the door marked "Broom Closet"</a></li>
+                <li><a href="#" onclick="window.alert('You try that door, but the handle breaks off with little to no resistance. How unfortunate.');">Go through the door with a washed-out label</a></li>
+            </ul>
+        </main>
+		<footer>
+			<p id="timer">Looks like the script didn't load. Please make sure JavaScript is enabled and working.</p>
+			<p>This game was made by Trystan Knoll.</p>
+		</footer>
+    </body>
+</html>

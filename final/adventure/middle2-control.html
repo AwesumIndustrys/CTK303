@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TITLE - Web-venture</title>
+		<link href="../styles.css" rel="stylesheet" type="text/css">
+		<script src="../loadsave.js"></script>
+    </head>
+    <body>
+        <header>
+			<h1><a href="../index.html">Web-venture</a></h1>
+            <ul>
+                <li><a onclick="makeSave()">Save here</a></li>
+                <li><a onclick="loadSave()">Load savegame</a></li>
+            </ul>
+		</header>
+        <main>
+            <h2>Control room</h2>
+            <p>You make it to the control room. In it, you find a panel for programming the autopilot to fly to known locations. You look at it and read the panel.</p>
+            <div class="quote"><p>Ship is currently idle. Where would you like to go.</p>
+            <ul>
+                <li><a href="./homeending.html">Earth</a></li>
+                <li><a href="#" onclick="window.alert('Why not just go to earth?')">Pluto</a></li>
+                <li><a href="#" onclick="window.alert('Why not just go to earth?')">Zaxxon</a></li>
+                <li><a href="#" onclick="window.alert('Why not just go to earth?')">Krypton</a></li>
+                <li><a href="#" onclick="window.alert('Who names a planet Bruce?')">Bruce</a></li>
+            </ul></div>
+        </main>
+		<footer>
+			<p id="timer">Looks like the script didn't load. Please make sure JavaScript is enabled and working.</p>
+			<p>This game was made by Trystan Knoll.</p>
+		</footer>
+    </body>
+</html>

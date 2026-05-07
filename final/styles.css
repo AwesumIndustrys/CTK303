@@ -65,6 +65,14 @@ main p, main h2, main ul {
     padding-bottom: 0.5em;
 }
 
+.quote {
+    background-color: #222222;
+    margin: 0 10%;
+    padding: 1em 2em;
+    color: lime;
+    font-family: monospace;
+}
+
 footer {
     margin-top: 1em;
     padding: 1em;
